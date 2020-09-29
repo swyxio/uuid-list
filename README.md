@@ -19,6 +19,8 @@ list of uuid and hash implementations
 
 ## Impls
 
+grab n go: https://www.uuidgenerator.net/
+
 super simple dumb uuid
 
 ```js
