@@ -21,7 +21,7 @@ list of uuid and hash implementations
     > We’re aiming to keep our k below 1 second, meaning that tweets posted within a second of one another will be within a second of one another in the id space too.
 
 - KSUID's https://github.com/segmentio/ksuid (segment)
-- ulid's https://github.com/ulid/spec (instagram, firebase)
+- ulid's https://github.com/ulid/spec ([instagram](http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram), [firebase](https://firebase.googleblog.com/2015/02/the-2120-ways-to-ensure-unique_68.html))
 
 
 ## Impls
