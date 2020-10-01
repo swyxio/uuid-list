@@ -16,13 +16,14 @@ list of uuid and hash implementations
   
 ## Concepts
 
+- https://tools.ietf.org/html/rfc4122
 - k-sorting http://ci.nii.ac.jp/naid/110002673489/
 
     > We’re aiming to keep our k below 1 second, meaning that tweets posted within a second of one another will be within a second of one another in the id space too.
 
 - KSUID's https://github.com/segmentio/ksuid (segment)
 - ulid's https://github.com/ulid/spec ([instagram](http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram), [firebase](https://firebase.googleblog.com/2015/02/the-2120-ways-to-ensure-unique_68.html))
-
+- c4 ID's http://www.cccc.io/
 
 ## Impls
 
