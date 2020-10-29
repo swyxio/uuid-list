@@ -7,10 +7,10 @@ list of uuid and hash implementations
 - extremely low chance of collision
 - chronologically sortable
 - alphabetically sortable? (k-sortable?)
-- 64 bits (instead of 128bits)
+- 64 bits (instead of 128bits) or otherwise fixed length (bc of storage concerns)
 - inputs:
   - timestamp
-  - 
+  - string?
 - no dependencies
 - no need for coordaination
   
@@ -59,3 +59,4 @@ export function uuid() {
 - Twitter Snowflake (2010-2014) https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake.html
 - uuid/v4
   - https://digitalbunker.dev/2020/09/30/understanding-how-uuids-are-generated/
+  - https://github.com/lukeed/uid#benchmarks
