@@ -1,6 +1,6 @@
 # uuid-list
 
-list of uuid and hash implementations
+list of unique id implementations, design considerations, and resources. may also overlap somewhat with the topic of hashing
 
 ## Desirable Properties
 
@@ -16,7 +16,8 @@ list of uuid and hash implementations
   
 ## Concepts
 
-- https://tools.ietf.org/html/rfc4122
+- https://en.wikipedia.org/wiki/Universally_unique_identifier
+- RFC: A Universally Unique IDentifier (UUID) URN Namespace - https://tools.ietf.org/html/rfc4122
 - k-sorting http://ci.nii.ac.jp/naid/110002673489/
 
     > We’re aiming to keep our k below 1 second, meaning that tweets posted within a second of one another will be within a second of one another in the id space too.
@@ -61,3 +62,4 @@ export function uuid() {
 - uuid/v4
   - https://digitalbunker.dev/2020/09/30/understanding-how-uuids-are-generated/
   - https://github.com/lukeed/uuid
+  - https://github.com/uuidjs/uuid
