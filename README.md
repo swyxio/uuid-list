@@ -12,7 +12,7 @@ list of uuid and hash implementations
   - timestamp
   - string?
 - no dependencies
-- no need for coordaination
+- no need for coordination (among different clients generating uuid's)
   
 ## Concepts
 
@@ -57,6 +57,7 @@ export function uuid() {
 
 
 - Twitter Snowflake (2010-2014) https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake.html
+- fast random ID: https://github.com/lukeed/uid
 - uuid/v4
   - https://digitalbunker.dev/2020/09/30/understanding-how-uuids-are-generated/
-  - https://github.com/lukeed/uid#benchmarks
+  - https://github.com/lukeed/uuid
