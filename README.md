@@ -58,8 +58,10 @@ export function uuid() {
 
 
 - Twitter Snowflake (2010-2014) https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake.html
-- fast random ID: https://github.com/lukeed/uid
-- uuid/v4
+- fast random ID: 
+  - https://github.com/lukeed/uid
+  - https://github.com/lukeed/hexoid like (uid but >3x faster due to different api)
+- uuid/v4:
   - https://digitalbunker.dev/2020/09/30/understanding-how-uuids-are-generated/
   - https://github.com/lukeed/uuid
   - https://github.com/uuidjs/uuid
