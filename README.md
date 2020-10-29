@@ -85,6 +85,7 @@ export function uuid() {
     uid(32); //=> 'yrfiw88qlq1fgpm40lguz6u43gksfj4a'
     ```
   - https://github.com/lukeed/hexoid like (uid but >3x faster due to different api)
+  - https://github.com/ericelliott/cuid Collision-resistant ids optimized for horizontal scaling and binary search lookup performance.
   - https://github.com/ai/nanoid A tiny (108 bytes), secure, URL-friendly, unique string ID generator for JavaScript
     
     ```js
