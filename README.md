@@ -5,9 +5,14 @@ list of unique id implementations, design considerations, and resources. may als
 ## Desirable Properties
 
 - extremely low chance of collision
-- chronologically sortable
-- alphabetically sortable? (k-sortable?)
-- 64 bits (instead of 128bits) or otherwise fixed length (bc of storage concerns)
+- sorting
+  - chronologically sortable
+  - lexicographically/alphabetically sortable? (k-sortable?)
+- speed
+- string qualities
+  - case insensitive
+  - URL safe
+  - 64 bits (instead of 128bits) or otherwise fixed length (bc of storage concerns)
 - secure/good entropy
   - non-secure = `Math.random` + `Date.now`
   - cryptographically secure = CSPRNG - use `crypto` module in node.js
