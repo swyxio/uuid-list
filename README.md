@@ -9,7 +9,7 @@ list of unique id implementations, design considerations, and resources. may als
 - alphabetically sortable? (k-sortable?)
 - 64 bits (instead of 128bits) or otherwise fixed length (bc of storage concerns)
 - secure/good entropy
-  - non-secure = `Math.random`
+  - non-secure = `Math.random` + `Date.now`
   - cryptographically secure = CSPRNG - use `crypto` module in node.js
   - ?
 - inputs:
@@ -63,8 +63,29 @@ export function uuid() {
 
 - Twitter Snowflake (2010-2014) https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake.html
 - fast random ID: 
-  - https://github.com/lukeed/uid
+  - https://github.com/lukeed/uid A tiny (134B) and fast utility to generate random IDs of fixed length
+    
+    ```js
+    import { uid } from 'uid';
+    // or: import { uid } from 'uid/secure';
+    // or: import { uid } from 'uid/single';
+
+    // length = 11 (default)
+    uid(); //=> 'fsm2vsgo1pr'
+    uid(); //=> 'gf34sezvoh6'
+
+    // customize length
+    uid(16); //=> 'zbb6cc3ay26omrdz'
+    uid(25); //=> 'lljjmo3f39rnjudsgqvzta1rb'
+    uid(32); //=> 'yrfiw88qlq1fgpm40lguz6u43gksfj4a'
+    ```
   - https://github.com/lukeed/hexoid like (uid but >3x faster due to different api)
+  - https://github.com/ai/nanoid A tiny (108 bytes), secure, URL-friendly, unique string ID generator for JavaScript
+    
+    ```js
+    import { nanoid } from 'nanoid'
+    model.id = nanoid() //=> "V1StGXR8_Z5jdHi6B-myT"
+    ```
 - uuid/v4:
   - https://digitalbunker.dev/2020/09/30/understanding-how-uuids-are-generated/
   - https://github.com/lukeed/uuid
