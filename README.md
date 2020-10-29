@@ -30,7 +30,7 @@ list of unique id implementations, design considerations, and resources. may als
 
 grab n go: https://www.uuidgenerator.net/
 
-super simple dumb uuid
+super simple dumb unique id
 
 ```js
 function id () {
