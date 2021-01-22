@@ -70,7 +70,8 @@ export function uuid() {
 
 
 - Twitter Snowflake (2010-2014) https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake.html
-- Timeflake https://github.com/anthonynsimon/timeflake
+- ULID https://github.com/ulid/spec ([security concern](https://news.ycombinator.com/item?id=25871981))
+- Timeflake https://github.com/anthonynsimon/timeflake ([not for security](https://news.ycombinator.com/item?id=25872009))
 - fast random ID: 
   - https://github.com/lukeed/uid A tiny (134B) and fast utility to generate random IDs of fixed length
     
