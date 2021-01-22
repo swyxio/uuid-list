@@ -9,6 +9,7 @@ list of unique id implementations, design considerations, and resources. may als
   - chronologically sortable
   - lexicographically/alphabetically sortable? (k-sortable?)
 - speed
+   - [completely random hurts perf](https://www.percona.com/blog/2019/11/22/uuids-are-popular-but-bad-for-performance-lets-discuss/)
 - string qualities
   - case insensitive
   - URL safe
