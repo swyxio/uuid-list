@@ -37,6 +37,8 @@ list of unique id implementations, design considerations, and resources. may als
 - c4 ID's http://www.cccc.io/
 - MongoDB ObjectID: https://www.mongodb.com/blog/post/generating-globally-unique-identifiers-for-use-with-mongodb
 - guid alternatives https://www.softwareatscale.dev/p/guids-are-not-enough
+- UUID and MySQL performance - [YouTube discussion](https://www.youtube.com/watch?v=Y5mWz4vK10A)
+  - *MySQL is clustered by default on the primary key which means inserts have to be ordered, so UUID (random in nature) has bad performance in MySQL.*
 
 
 ## Impls
