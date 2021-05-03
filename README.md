@@ -34,6 +34,7 @@ list of unique id implementations, design considerations, and resources. may als
 
 - KSUID's https://github.com/segmentio/ksuid (segment)
 - FUUID https://github.com/kpdemetriou/fuuid UUIDs are compatible with regular UUIDs but are naturally ordered by generation time, collision-free and support succinct representations such as raw binary and base58-encoded strings.
+  - Warning - not mature https://news.ycombinator.com/item?id=27030088
 - ulid's https://github.com/ulid/spec ([instagram](http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram), [firebase](https://firebase.googleblog.com/2015/02/the-2120-ways-to-ensure-unique_68.html))
 - c4 ID's http://www.cccc.io/
 - MongoDB ObjectID: https://www.mongodb.com/blog/post/generating-globally-unique-identifiers-for-use-with-mongodb
