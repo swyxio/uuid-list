@@ -103,6 +103,12 @@ export function uuid() {
     model.id = nanoid() //=> "V1StGXR8_Z5jdHi6B-myT"
     ```
 - uuid/v4:
+  - [as of Node v14.17](https://nodejs.org/en/blog/release/v14.17.0/#uuid-support-in-the-crypto-module) you can generate UUID4's with the crypto module:
+    ```js
+    const { randomUUID } = require('crypto');
+    console.log(randomUUID());
+    // 'aa7c91a1-f8fc-4339-b9db-f93fc7233429'
+    ```
   - https://digitalbunker.dev/2020/09/30/understanding-how-uuids-are-generated/
   - https://github.com/lukeed/uuid
   - https://github.com/uuidjs/uuid
