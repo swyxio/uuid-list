@@ -96,7 +96,7 @@ export function uuid() {
     ```
   - https://github.com/lukeed/hexoid like (uid but >3x faster due to different api)
   - https://github.com/ericelliott/cuid Collision-resistant ids optimized for horizontal scaling and binary search lookup performance.
-  - https://github.com/ai/nanoid A tiny (108 bytes), secure, URL-friendly, unique string ID generator for JavaScript
+  - https://github.com/ai/nanoid A tiny (108 bytes), secure, URL-friendly, unique string ID generator for JavaScript. [Comparison vs uuid](https://blog.bitsrc.io/why-is-nanoid-replacing-uuid-1b5100e62ed2)
     
     ```js
     import { nanoid } from 'nanoid'
