@@ -1,3 +1,5 @@
+> this list is now archived - look inside https://github.com/sw-yx/brain if you would like an updated list! thank you.
+
 # uuid-list
 
 list of unique id implementations, design considerations, and resources. may also overlap somewhat with the topic of hashing
